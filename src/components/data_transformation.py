@@ -121,4 +121,5 @@ class DataTransformation:
             )
             
         except Exception as e:
-            await CustomException(e,sys)
+            raise CustomException(sys,e)
+        
